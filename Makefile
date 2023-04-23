@@ -1,4 +1,4 @@
-market : market.c manager.c product.c 
+market : market.c manager.o product.o 
 	gcc -o $@ $^
 manager.o : manager.c manager.h
 	gcc -c $^
